@@ -1,13 +1,46 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world! Test
-  </h1>
+    <div class="border-2 border-black">
+        <div class="flex flex-row container mx-auto px-4 py-6">
+            <a class="font-medium tracking-wider" href="/index.html">KARTOSHKA</a>
+            <a class="font-light ml-auto" href="/about.html">ABOUT</a>
+        </div>
+    </div>
+    <div class="max-w-2xl mx-auto px-4 py-10 prose">
+        <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1222&q=80"
+            alt="Nebula Photo from NASA" class="h-96 w-full object-cover rounded mb-4">
+        <h1 class="mb-2">
+            The Wonders of the Universe: Exploring the Vast and Mysterious Cosmos
+        </h1>
+        <p class="mt-2">
+            The universe's mysteries and infinite possibilities have always fascinated humanity. Despite technological
+            advancements, our understanding remains limited, leaving us with endless questions to explore.
+        </p>
+    </div>
+    <div class="max-w-2xl flex content-center mx-auto px-4">
+        <img src="https://images.unsplash.com/photo-1575887339850-1acc9d8daf3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="Letter to Hogwarts Express" class="h-44 w-full object-cover rounded mr-4">
+        <div class="prose">
+            <h2 class="mb-2">
+                Potter-mania: Enchanting Audiences Everywhere
+            </h2>
+            <p class="mt-2">
+                Since the first movie release in 2001, Harry Potter films have captured the imaginations of millions
+                worldwide. Hogwarts' magical world and its iconic characters have become beloved household names.
+            </p>
+        </div>
+    </div>
+
 </body>
+
 </html>
