@@ -1,8 +1,14 @@
 <!doctype html>
 <html>
 <!-- Start: npm start -->
+<!-- Saving:
+    git add -A
+    git commit -m "message"
+    git push
+-->
 
 <head>
+    <title>Kartoshka blog</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,142 +24,165 @@
             <a class="font-light ml-auto hover:text-red-600" href="/about.html">ABOUT</a>
         </div>
     </nav>
-    <div class="max-w-5xl mx-auto px-4 py-10 flex flex-row gap-6">
-        <div class="basis-5/6 prose">
-            <img src="https://images.unsplash.com/photo-1588765918508-ceb11c620d46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
-                alt="Lake Kayindy in Kazakhstan" class="h-96 w-full object-cover rounded mb-4">
-            <h1 class="mb-2 font-serif text-3xl">
-                Kazakhstan: Exploring Unexplored
-            </h1>
-            <p class="mt-2 line-clamp-2">
-                Kazakhstan is a vast and diverse country that remains largely unexplored by tourists. From the
-                snow-capped peaks of the Tian Shan mountains to the expansive steppes of the Kazakh heartland,
-                there is no shortage of stunning natural scenery and cultural landmarks to discover.
-            </p>
-        </div>
+    <div class="max-w-4xl mx-auto px-4 py-10 flex flex-col md:flex-row gap-6">
+        <a href="./post.html">
+            <div class="basis-5/6 prose">
+                <img src="https://images.unsplash.com/photo-1588765918508-ceb11c620d46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+                    alt="Lake Kayindy in Kazakhstan" class="h-96 w-full object-cover rounded mb-4">
+                <h1 class="mb-2 font-serif text-3xl hover:underline hover:decoration-red-600 hover:decoration-2">
+                    Kazakhstan: Exploring Unexplored
+                </h1>
+                <p class="mt-2 line-clamp-2">
+                    Kazakhstan is a vast and diverse country that remains largely unexplored by tourists. From the
+                    snow-capped peaks of the Tian Shan mountains to the expansive steppes of the Kazakh heartland,
+                    there is no shortage of stunning natural scenery and cultural landmarks to discover.
+                </p>
+            </div>
+        </a>
         <div class="grow">
             <div class="mb-4">
-                <h1 class="text-xs font-medium text-gray-500">
+                <h1 class="text-xs font-medium text-gray-500 hover:underline">
                     POPULAR POSTS
                 </h1>
             </div>
             <div class="font-medium">
                 <div>
-                    <h2>
-                        The Beauty of Nature: Finding Peace in the Outdoors
+                    <h2 class="hover:underline hover:decoration-red-600 hover:decoration-2">
+                        <a href="./post.html">
+                            The Beauty of Nature: Finding Peace in the Outdoors
+                        </a>
                     </h2>
                 </div>
                 <hr class="my-4">
                 <div>
-                    <h2>
-                        Why Laughter is the Best Medicine
+                    <h2 class="hover:underline hover:decoration-red-600 hover:decoration-2">
+                        <a href="./post.html">
+                            Why Laughter is the Best Medicine
+                        </a>
                     </h2>
                 </div>
                 <hr class="my-4">
                 <div>
-                    <h2>
-                        Overcoming Procrastination: How to Get Things Done
+                    <h2 class="hover:underline hover:decoration-red-600 hover:decoration-2">
+                        <a href="./post.html">
+                            Overcoming Procrastination: How to Get Things Done
+                        </a>
                     </h2>
                 </div>
                 <hr class="my-4">
                 <div>
-                    <h2>
-                        The Power of Gratitude: Cultivating a Positive Mindset
+                    <h2 class="hover:underline hover:decoration-red-600 hover:decoration-2">
+                        <a href="./post.html">
+                            The Power of Gratitude: Cultivating a Positive Mindset
+                        </a>
                     </h2>
                 </div>
                 <hr class="my-4">
                 <div>
-                    <h2>
-                        Exploring Your City: Hidden Gems and Local Favorites
+                    <h2 class="hover:underline hover:decoration-red-600 hover:decoration-2">
+                        <a href="./post.html">
+                            Exploring Your City: Hidden Gems and Local Favorites
+                        </a>
                     </h2>
                 </div>
                 <hr class="my-4">
                 <div>
-                    <h2>
-                        Living in the Moment: Embracing the Present
+                    <h2 class="hover:underline hover:decoration-red-600 hover:decoration-2">
+                        <a href="./post.html">
+                            Living in the Moment: Embracing the Present
+                        </a>
                     </h2>
                 </div>
             </div>
         </div>
     </div>
-    <div class="max-w-4xl mx-auto px-4 pb-10">
-        <div class="mb-4 text-xs font-medium text-gray-500">
+    <div class="max-w-4xl mx-auto px-4  pb-10">
+        <div class="mb-4 text-xs font-medium text-gray-500 hover:underline">
             LATEST POSTS
         </div>
-        <div class="flex flex-row">
-            <img src="https://images.unsplash.com/photo-1635929710899-da06963069bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
-                alt="Hogwarts Castle" class="h-44 w-48 object-cover rounded mr-4">
-            <div class="prose flex flex-col">
-                <h2 class="mb-2">
-                    Potter-mania: Enchanting Audiences Everywhere
-                </h2>
-                <p class="mt-2 mb-2 line-clamp-3">
-                    Since the first movie release in 2001, Harry Potter films have captured the imaginations of
-                    millions
-                    worldwide. Hogwarts' magical world and its iconic characters have become beloved household
-                    names.
-                </p>
-                <div class="not-prose text-xs text-gray-400 mt-auto">
-                    MAR 1, 2023
+        <a href="./post.html">
+            <div class="flex flex-row">
+                <img src="https://images.unsplash.com/photo-1635929710899-da06963069bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+                    alt="Hogwarts Castle" class="h-44 w-48 object-cover rounded mr-4 hidden sm:block">
+                <div class="prose flex flex-col">
+                    <h2 class="mb-2 hover:underline hover:decoration-red-600 hover:decoration-2">
+                        Potter-mania: Enchanting Audiences Everywhere
+                    </h2>
+                    <p class="mt-2 mb-2 line-clamp-3">
+                        Since the first movie release in 2001, Harry Potter films have captured the imaginations of
+                        millions
+                        worldwide. Hogwarts' magical world and its iconic characters have become beloved household
+                        names.
+                    </p>
+                    <div class="not-prose text-xs text-gray-400 mt-auto">
+                        MAR 1, 2023
+                    </div>
                 </div>
             </div>
-        </div>
+        </a>
         <hr class="my-5">
-        <div class="flex flex-row">
-            <img src="https://images.unsplash.com/photo-1573096108468-702f6014ef28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
-                alt="Modern Art Wall Mural" class="h-44 w-48 object-cover rounded mr-4">
-            <div class="prose flex flex-col">
-                <h2 class="mb-2">
-                    Exploring the Boundaries of Modern Art
-                </h2>
-                <p class="mt-2 mb-2 line-clamp-3">
-                    Modern art is a constantly evolving field that challenges conventional notions of creativity and
-                    expression. From abstract paintings to interactive installations, modern art pushes the
-                    boundaries
-                    of what is possible and encourages us to see the world in new ways.
-                </p>
-                <div class="not-prose text-xs text-gray-400 mt-auto">
-                    FEB 20, 2023
+        <a href="./post.html">
+            <div class="flex flex-row">
+                <img src="https://images.unsplash.com/photo-1573096108468-702f6014ef28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
+                    alt="Modern Art Wall Mural" class="h-44 w-48 object-cover rounded mr-4 hidden sm:block">
+                <div class="prose flex flex-col">
+                    <h2 class="mb-2 hover:underline hover:decoration-red-600 hover:decoration-2">
+                        Exploring the Boundaries of Modern Art
+                    </h2>
+                    <p class="mt-2 mb-2 line-clamp-3">
+                        Modern art is a constantly evolving field that challenges conventional notions of creativity and
+                        expression. From abstract paintings to interactive installations, modern art pushes the
+                        boundaries
+                        of what is possible and encourages us to see the world in new ways.
+                    </p>
+                    <div class="not-prose text-xs text-gray-400 mt-auto">
+                        FEB 20, 2023
+                    </div>
                 </div>
             </div>
-        </div>
+        </a>
         <hr class="my-5">
-        <div class="flex flex-row">
-            <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1788&q=80"
-                alt="Busy Night Street in Japan" class="h-44 w-48 object-cover rounded mr-4">
-            <div class="prose flex flex-col">
-                <h2 class="mb-2">
-                    The Alluring Vibe of Japan
-                </h2>
-                <p class="mt-2 mb-2 line-clamp-3">
-                    Japan is a land of contrasts, where ancient traditions blend seamlessly with modern technology
-                    and
-                    urban culture. From the neon-lit streets of Tokyo to the serene temples of Kyoto, Japan's unique
-                    charm and allure have captivated travelers for centuries.
-                </p>
-                <div class="not-prose text-xs text-gray-400 mt-auto">
-                    FEB 14, 2023
+        <a href="./post.html">
+            <div class="flex flex-row">
+                <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1788&q=80"
+                    alt="Busy Night Street in Japan" class="h-44 w-48 object-cover rounded mr-4 hidden sm:block">
+                <div class="prose flex flex-col">
+                    <h2 class="mb-2 hover:underline hover:decoration-red-600 hover:decoration-2">
+                        The Alluring Vibe of Japan
+                    </h2>
+                    <p class="mt-2 mb-2 line-clamp-3">
+                        Japan is a land of contrasts, where ancient traditions blend seamlessly with modern technology
+                        and
+                        urban culture. From the neon-lit streets of Tokyo to the serene temples of Kyoto, Japan's unique
+                        charm and allure have captivated travelers for centuries.
+                    </p>
+                    <div class="not-prose text-xs text-gray-400 mt-auto">
+                        FEB 14, 2023
+                    </div>
                 </div>
             </div>
-        </div>
+        </a>
         <hr class="my-5">
-        <div class="flex flex-row">
-            <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1222&q=80"
-            alt="Nebula Photo from NASA" class="h-44 w-48 object-cover rounded mr-4">
-            <div class="prose flex flex-col">
-                <h2 class="mb-2">
-                    The Wonders of the Universe
-                </h2>
-                <p class="mt-2 mb-2 line-clamp-3">
-                    The universe's mysteries and infinite possibilities have always fascinated humanity. Despite
-                    technological advancements, our understanding remains limited, leaving us with endless questions to
-                    explore.
-                </p>
-                <div class="not-prose text-xs text-gray-400 mt-auto">
-                    JAN 18, 2023
+        <a href="./post.html">
+            <div class="flex flex-row">
+                <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1222&q=80"
+                    alt="Nebula Photo from NASA" class="h-44 w-48 object-cover rounded mr-4 hidden sm:block">
+                <div class="prose flex flex-col">
+                    <h2 class="mb-2 hover:underline hover:decoration-red-600 hover:decoration-2">
+                        The Wonders of the Universe
+                    </h2>
+                    <p class="mt-2 mb-2 line-clamp-3">
+                        The universe's mysteries and infinite possibilities have always fascinated humanity. Despite
+                        technological advancements, our understanding remains limited, leaving us with endless questions
+                        to
+                        explore.
+                    </p>
+                    <div class="not-prose text-xs text-gray-400 mt-auto">
+                        JAN 18, 2023
+                    </div>
                 </div>
             </div>
-        </div>
+        </a>
     </div>
     <footer class="bg-zinc-900 text-zinc-50">
         <div class="flex flex-row container mx-auto px-4 py-4">

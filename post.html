@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<!-- Start: npm start -->
+
+<head>
+    <title>Blog post</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="bg-zinc-50">
+    <nav class="bg-zinc-50 border-2 border-black sticky top-0 left-0 right-0">
+        <div class="flex flex-row container mx-auto px-4 py-4">
+            <a class="font-medium tracking-wider hover:text-red-600" href="/index.html">KARTOSHKA!</a>
+            <a class="font-light ml-auto hover:text-red-600" href="/about.html">ABOUT</a>
+        </div>
+    </nav>
+    <div class="max-w-2xl mx-auto px-4 py-10">
+        <div class="mb-10">
+            <div id="carousel" class="w-full mb-2">
+                <img src="https://images.unsplash.com/photo-1588765918508-ceb11c620d46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+                    alt="Lake Kayindy in Kazakhstan" class="w-full h-96 object-cover rounded-md">
+                <img src="https://images.unsplash.com/photo-1562595706-61433957484a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80"
+                    alt="Mounted shepherd and a herd of sheep in the fading light shortly before sunset"
+                    class="w-full h-96 object-cover rounded-md">
+                <img src="https://images.unsplash.com/photo-1556881798-ea9705321743?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+                    alt="Charyn Canyon, Kazakhstan" class="w-full h-96 object-cover rounded-md">
+            </div>
+            <div class="flex">
+                <button id="carousel-control-prev"
+                    class="border py-1 px-4 rounded-md hover:bg-indigo-400 hover:text-white">Previous</button>
+                <button id="carousel-control-next"
+                    class="ml-auto border py-1 px-4 rounded-md hover:bg-indigo-400 hover:text-white">Next</button>
+            </div>
+        </div>
+        <div class="prose">
+            <h1 class="mb-12  font-serif text-center">
+                Kazakhstan: Exploring Unexplored
+            </h1>
+            <p class="mt-2">
+                Kazakhstan is a land of contrasts, with vast open steppes, towering mountains, and bustling cities that
+                blend modernity with tradition. Despite being the world's ninth-largest country and boasting a rich
+                history and diverse culture, Kazakhstan remains largely unexplored by tourists. In this post, we will
+                take a closer look at what makes Kazakhstan such a fascinating destination, and explore some of the
+                hidden gems that await those who venture to this unexplored corner of the world.
+            </p>
+            <p class="mt-2">
+                One of the most striking things about Kazakhstan is its stunning natural beauty. From the snow-capped
+                peaks of the Tien Shan mountains to the otherworldly landscapes of the Altyn-Emel National Park, there
+                is no shortage of breathtaking vistas to be found here. One must-visit destination is Lake Kaindy, a
+                surreal lake nestled in the mountains that is famous for its submerged trees and crystal-clear waters.
+            </p>
+            <p class="mt-2">
+                Beyond its natural wonders, Kazakhstan is also a land of rich history and culture. The ancient city of
+                Turkestan, for example, is home to the mausoleum of the famous Sufi mystic Khoja Ahmed Yasawi and is one
+                of the most important pilgrimage sites in Central Asia. The city of Almaty, on the other hand, offers a
+                glimpse into modern Kazakhstan, with its bustling streets, lively cafes, and vibrant nightlife.
+            </p>
+            <p class="mt-2">
+                Another unique aspect of Kazakhstan is its diverse ethnic makeup, with Kazakhs, Russians, Uzbeks, and
+                other groups all calling the country home. This diversity is reflected in the local cuisine, which
+                blends elements of Russian, Kazakh, Uzbek, and other culinary traditions. Be sure to try traditional
+                dishes such as beshbarmak, a hearty meat and noodle dish, and shashlik, a grilled meat dish that is a
+                popular street food.
+            </p>
+            <p class="mt-5">
+                In conclusion, Kazakhstan is a land of untold wonders, with stunning natural landscapes, rich history
+                and culture, and a diverse and welcoming people. Whether you're a history buff, an outdoor enthusiast,
+                or a foodie, there is something for everyone in this unexplored corner of the world. So why not book
+                your ticket and explore the wonders of Kazakhstan for yourself?
+            </p>
+        </div>
+    </div>
+    <div class="max-w-2xl mx-auto px-4 pb-10">
+        <div class="mb-4 text-xs font-medium text-gray-500">
+            READ NEXT
+        </div>
+        <div class="font-medium">
+            <div>
+                <h2 class="hover:underline hover:decoration-red-600 hover:decoration-2">
+                    <a href="./post.html">
+                        The Beauty of Nature: Finding Peace in the Outdoors
+                    </a>
+                </h2>
+            </div>
+            <hr class="my-4">
+            <div>
+                <h2 class="hover:underline hover:decoration-red-600 hover:decoration-2">
+                    <a href="./post.html">
+                        Why Laughter is the Best Medicine
+                    </a>
+                </h2>
+            </div>
+            <hr class="my-4">
+            <div>
+                <h2 class="hover:underline hover:decoration-red-600 hover:decoration-2">
+                    <a href="./post.html">
+                        Overcoming Procrastination: How to Get Things Done
+                    </a>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-zinc-900 text-zinc-50">
+        <div class="flex flex-row container mx-auto px-4 py-4">
+            <a class="font-medium tracking-wider text-sm hover:text-red-400" href="/index.html">KARTOSHKA!</a>
+            <a class="font-normal  ml-auto text-xs hover:text-red-400" href="/about.html">ABOUT</a>
+        </div>
+    </footer>
+</body>
+
+</html>
