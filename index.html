@@ -27,11 +27,24 @@
             <div class="mx-auto">
                 <h3 class="text-xl uppercase">Do you like my website?</h3>
                 <div class="flex flex-row gap-10 justify-center mt-6">
-                    <button>
-                        <i id="good" class="text-3xl text-gray-500 fa-solid fa-thumbs-up hover:text-red-600"></i>
+                    <button id="good">
+                        <i class="text-3xl text-gray-500 fa-solid fa-thumbs-up hover:text-red-600"></i>
                     </button>
-                    <button>
-                        <i id="bad" class="text-3xl text-gray-500 fa-solid fa-thumbs-down hover:text-red-600"></i>
+                    <div id="happy" class="hidden">
+                        <i class="text-3xl text-green-500 fa-solid fa-face-smile"></i>
+                    </div>
+                    <button id="bad">
+                        <i class="text-3xl text-gray-500 fa-solid fa-thumbs-down hover:text-red-600"></i>
+                    </button>
+                    <div id="sad" class="hidden">
+                        <i class="text-3xl text-red-500 fa-solid fa-face-sad-tear"></i>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-6">
+                    <button id="send-button"
+                        class="border-2 py-2 px-6 rounded-lg text-black border-black bg-transparent hover:bg-black hover:text-white disabled:border-gray-200 disabled:text-gray-300 disabled:bg-white disabled:hover:text-gray-300 disabled:hover:border-gray-200"
+                        disabled="true">
+                        SEND
                     </button>
                 </div>
             </div>

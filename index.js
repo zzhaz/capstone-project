@@ -36,42 +36,63 @@ function initializeCarousel() {
     updateCarousel();
 }
 
-function initializePopup(){
+function initializePopup() {
     const popup = document.getElementById('popup');
     const popupBg = document.getElementById('popup-bg');
     const good = document.getElementById('good');
+    const happy = document.getElementById('happy');
+    const sad = document.getElementById('sad');
     const bad = document.getElementById('bad');
+    const sendButton = document.getElementById('send-button');
 
-    if (!popup){
+    if (window.localStorage.getItem('popupShown')) {
         return;
     }
-    popup.classList.remove('hidden');
-    
-    function closePopup(){
-        popup.classList.add('hidden');
+
+    if (!popup) {
+        return;
     }
-    
+
+
+    popup.classList.remove('hidden');
+
+    function closePopup() {
+        popup.classList.add('hidden');
+        window.localStorage.setItem('popupShown', true);
+    }
+
     popupBg.addEventListener('click', closePopup);
 
-    function onGoodClick(){
-        good.classList.remove("fa-thumbs-up");
-        good.classList.add("fa-face-smile");
-  
+    function onGoodClick() {
+        good.classList.add('hidden');
+        happy.classList.remove('hidden');
+        bad.classList.remove('hidden');
+        sad.classList.add('hidden');
+        sendButton.removeAttribute('disabled');
     }
+
     good.addEventListener('click', onGoodClick);
 
-    function onBadClick(){
-        bad.classList.remove("fa-thumbs-down");
-        bad.classList.add("fa-face-sad-tear");
-  
+    function onBadClick() {
+        bad.classList.add('hidden');
+        sad.classList.remove('hidden');
+        good.classList.remove('hidden');
+        happy.classList.add('hidden');
+        sendButton.removeAttribute('disabled');
     }
 
     bad.addEventListener('click', onBadClick);
+
+    function onSendClick() {
+        closePopup();
+    }
+
+    sendButton.addEventListener('click', onSendClick);
 }
 
 
 // On page load
 document.addEventListener("DOMContentLoaded", () => {
     initializeCarousel();
-    setInterval(initializePopup, 10000);
+    setInterval(initializePopup, 1000);
 });
