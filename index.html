@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <!-- Start: npm start -->
 <!-- Saving:
     git add -A
@@ -15,15 +15,40 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script src="index.js"></script>
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/3078ebf5d6.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-zinc-50">
+
+    <!-- Popup Modal -->
+    <div id="popup" class="fixed z-10 flex w-full h-full hidden">
+        <div id="popup-bg" class="fixed w-full h-full bg-gray-500 bg-opacity-50 transition-opacity"></div>
+        <div class="relative m-auto bg-white p-14 flex border-2 border-black">
+            <div class="mx-auto">
+                <h3 class="text-xl uppercase">Do you like my website?</h3>
+                <div class="flex flex-row gap-10 justify-center mt-6">
+                    <button>
+                        <i id="good" class="text-3xl text-gray-500 fa-solid fa-thumbs-up hover:text-red-600"></i>
+                    </button>
+                    <button>
+                        <i id="bad" class="text-3xl text-gray-500 fa-solid fa-thumbs-down hover:text-red-600"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Popup Modal -->
+
+    <!-- Header -->
     <nav class="bg-zinc-50 border-2 border-black sticky top-0 left-0 right-0">
         <div class="flex flex-row container mx-auto px-4 py-4">
             <a class="font-medium tracking-wider hover:text-red-600" href="/index.html">KARTOSHKA!</a>
             <a class="font-light ml-auto hover:text-red-600" href="/about.html">ABOUT</a>
         </div>
     </nav>
+    <!-- End Header -->
+
+
     <div class="max-w-4xl mx-auto px-4 py-10 flex flex-col md:flex-row gap-6">
         <a href="./post.html">
             <div class="basis-5/6 prose">
@@ -40,8 +65,9 @@
             </div>
         </a>
         <div class="grow">
-            <div class="mb-4">
-                <h1 class="text-xs font-medium text-gray-500 hover:underline">
+            <div class="mb-4 flex flex-row gap-2">
+                <i class="text-xs text-red-600 fa-solid fa-fire-flame-curved"></i>
+                <h1 class="text-xs font-medium text-red-600 hover:underline">
                     POPULAR POSTS
                 </h1>
             </div>
@@ -97,8 +123,9 @@
         </div>
     </div>
     <div class="max-w-4xl mx-auto px-4  pb-10">
-        <div class="mb-4 text-xs font-medium text-gray-500 hover:underline">
-            LATEST POSTS
+        <div class="mb-4 flex flex-row gap-2">
+            <i class="text-xs text-red-600 fa-solid fa-clock"></i>
+            <h1 class="text-xs font-medium text-red-600 hover:underline">LATEST POSTS</h1>
         </div>
         <a href="./post.html">
             <div class="flex flex-row">
