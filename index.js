@@ -94,5 +94,5 @@ function initializePopup() {
 // On page load
 document.addEventListener("DOMContentLoaded", () => {
     initializeCarousel();
-    setInterval(initializePopup, 1000);
+    setInterval(initializePopup, 10000);
 });
